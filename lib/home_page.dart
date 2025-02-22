@@ -136,14 +136,14 @@ class _HomePageState extends State<HomePage> {
                                 alignment: Alignment.center,
                                 children: [
                                   CircularProgressIndicator(
-                                    value: 0.85,
+                                    value: 0.10,
                                     strokeWidth: 7,
                                     backgroundColor: Colors.grey[300],
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                        Colors.green),
+                                        const Color.fromARGB(255, 247, 59, 35)),
                                   ),
                                   const Text(
-                                    '85%',
+                                    '10%',
                                     style: TextStyle(
                                       fontSize: 20,
                                     ),
@@ -175,11 +175,18 @@ class _HomePageState extends State<HomePage> {
                               ),
                               const SizedBox(height: 10),
                               const Text(
-                                'Good',
+                                'Bad',
                                 style: TextStyle(
                                     fontSize: 24,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.green),
+                                    color: Color.fromARGB(255, 255, 25, 25)),
+                              ),
+                              const Text(
+                                'you should charge the battery NOW!',
+                                style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(255, 255, 25, 25)),
                               ),
                             ],
                           ),
