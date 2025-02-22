@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'history_page.dart';
+import 'about_us_page.dart'; // เพิ่มการ import หน้า About Us
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -210,6 +211,24 @@ class _HomePageState extends State<HomePage> {
                       );
                     },
                     child: const Text("History",style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.grey[800], // Dark grey color
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const AboutUsPage(), // ไปยังหน้า About Us
+                        ),
+                      );
+                    },
+                    child: const Text("About Us",style: TextStyle(color: Colors.white)),
                   ),
                 ),
               ],
